@@ -37,6 +37,7 @@
             </div>
         </nav>
         <section role="main" class="container">
+            <!--#config errmsg="<h2>Opps! Something went wrong.</h2>" -->
             <!--#if expr="$QUERY_STRING = /^page=([a-zA-Z0-9]+)/" -->
                 <!--#set var="page" value="pages/$1.html" -->
                 <!--#include virtual="${page}" -->
