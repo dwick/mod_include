@@ -30,6 +30,12 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a href="?page=home"><span class="icon-home icon-white"></span> Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-fire icon-white"></span> Exhibits</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="?page=exhibits/squirrels">Squirrels</a></li>
+                                </ul>
+                            </li>
                             <li><a href="?page=help"><span class="icon-question-sign icon-white"></span> Help</a></li>
                         </ul>
                     </div>
@@ -38,7 +44,7 @@
         </nav>
         <section role="main" class="container">
             <!--#config errmsg="<h2>Opps! Something went wrong.</h2>" -->
-            <!--#if expr="$QUERY_STRING = /^page=([a-zA-Z0-9]+)/" -->
+            <!--#if expr="$QUERY_STRING = /^page=([a-zA-Z0-9\/]+)/" -->
                 <!--#set var="page" value="pages/$1.html" -->
                 <!--#include virtual="${page}" -->
             <!--#else -->
